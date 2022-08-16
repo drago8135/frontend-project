@@ -2,26 +2,33 @@ import React from 'react'
 
 const Tab3 = () => {
     return (
-        <div>
-            <table className='table-det'>
+        <div className='col'>
+            <table className="table-det">
+            <thead>
                 <tr>
-                    <td colSpan='5' className='lol'>Transfer Details</td>
+                    <th scope='col' className='lol' colSpan='9'>Transfer Details</th>
                 </tr>
                 <tr>
-                    <td className='lol'>Sender ID</td>
-                    <td className='lol'>Amount</td>
-                    <td className='lol'>Receiver ID</td>
-                    <td className='lol'>BIC</td>
-                    <td className='lol'>Reference ID</td>
-                    
+                <th scope="col" className='lol'>Sender ID</th>
+                <th scope="col" className='lol'>Amount</th>
+                <th scope="col" className='lol'>Receiver ID</th>
+                <th scope="col" className='lol'>BIC</th>
+                <th scope="col" className='lol'>Reference ID</th>
+                <th scope="col" className='lol'>Amount</th>
+                <th scope="col" className='lol'>Receiver ID</th>
+                <th scope="col" className='lol'>BIC</th>
+                <th scope="col" className='lol'>Reference ID</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
-                    <td className='lol'> for user id </td>
-                    <td className='lol'> for amount </td>
-                    <td className='lol'> for the bank id </td>
-                    <td className='lol'> for bic number </td>
-                    <td className='lol'> for the transfer number </td>
+                    <td className='lol' scope='row'> for user id </td>
+                    <td className='lol' scope='row'> for amount </td>
+                    <td className='lol' scope='row'> for the bank id </td>
+                    <td className='lol' scope='row'> for bic number </td>
+                    <td className='lol' scope='row'> for the transfer number </td>
                 </tr>
+            </tbody>
             </table>
         </div>
     )

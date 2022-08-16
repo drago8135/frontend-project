@@ -7,15 +7,17 @@ import Home from './components/pages/HomePage/Home';
 import User from './components/pages/UserPage/User';
 
 function App() {
+
   return (
     <Router>
       <Nav />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/Home' element={<Home />} />
-        <Route path='/Admin' element={<Admin />} />
-        <Route path='/User' element={<User />} />
-        <Route path='/User/Detailsp' element={<Detailsp />} />
+        <Route path='Home' element={<Home />} />
+        <Route path='Admin' element={<Admin />} />
+        <Route path='User' exact element={<User />}>
+          <Route path='Detailsp' element={<Detailsp />} />
+        </Route>
       </Routes>
     </Router>
   );

@@ -1,12 +1,12 @@
 export const objone = {
-    lbg : false,
-    ltext : true,
-    ldesc : true,
-    topline : 'Test-one',
-    headline : 'Test one lol bruh',
+    lbg : true,
+    ltext : false,
+    ldesc : false,
+    topline : 'Team StackOverFlow',
+    headline : 'DBS Tech India',
     desc : 'Test one description for no reason lol',
     buttonlabel : 'Test Button',
     imgstart : '',
-    img : 'dbs1.jpg',
+    img : 'bg3.png',
     alt : 'bruh'
 }

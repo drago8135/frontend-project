@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import LoginForm from '../LoginForm'
 import TransferForm from '../TransferPage/TransferForm';
 
@@ -12,6 +12,8 @@ const User = () => {
 
     const [user, setuser] = useState({uid: '', pwd: ''});
     const [error, seterror] = useState('');
+
+    const [bttn, setbttn] = useState(false);
 
     const login = details =>{
         console.log(details);
@@ -36,22 +38,28 @@ const User = () => {
         seterror('');
     }
 
+    const testfun =() =>{
+        console.log("button ok");
+        setbttn(true)
+    }
+
     return (
         <div>
             {(user.uid !== '') ? (
-                <div>
-                    <h2>Welcome, <span>{user.uid}</span></h2>
-                    <button onClick={logout}>Logout</button>
-                    <Link to='/User/Detailsp'>
-                    <button onClick>View Info</button>
+                <div className='usrdiv'>
+                    <h2 style={{color: 'whitesmoke'}}>Welcome, <span>{user.uid}</span></h2>
+                    <button onClick={logout} className='usr-btn' style={{marginLeft: '75%'}}>Logout</button>
+                    <Link to={`/User/Detailsp`}>
+                        <button className='usr-btn' style={{marginLeft: '20px'}} onClick={testfun}>View Info</button>
                     </Link>
                     <TransferForm />
+                    <Outlet />
                 </div>
                 
             ) : (
                 <LoginForm Login={login} error={error}/>
                 )}
-            </div>
+        </div>
     )
 }
 

@@ -6,36 +6,27 @@
 
 
 .outermain{
-    height: 100%;
+    height: 200%;
     width: 100%;
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 33, 33));
-    background-position: center;
-    background-size: cover;
+    background: white;
+    background-image: url(/public/bg2.jpg),url(/public/bg1.jpg);
+    background-position: right, left;
+    image-rendering: optimizeQuality;
+    background-repeat: no-repeat;
     position: absolute;
 }
 
 .outerfrom{
-    width: 350px;
-    height: 300px;
+    width: 60%;
+    height: 80%;
     position: absolute;
     margin: 2% auto;
     background: whitesmoke;
     padding: 4px;
     overflow: hidden;
     border-radius: 15px;
-    left: 250px;
-}
-
-.outerto{
-    width: 350px;
-    height: 300px;
-    position: relative;
-    margin: 2% auto;
-    background: whitesmoke;
-    padding: 4px;
-    overflow: hidden;
-    border-radius: 15px;
-    left: 220px;
+    left: 20%;
+    box-shadow: 10px 10px 8px #888888;
 }
 
 .tsubmit{
@@ -70,6 +61,13 @@
     left: 15px;
 }
 
+.inside-form-from, .inside-form-to{
+    width: 80%;
+    height: 100%;
+    margin: 5%;
+
+}
+
 .tname:hover, .tacc:hover, .bic:hover, .tbname:hover{
     transform: scale(1.1);
     border-bottom: 2px solid rgb(241, 114, 114);
@@ -85,7 +83,7 @@
     border-bottom: 2px solid rgb(255,255,255);
     outline: none;
     background: transparent;
-    left: 15px;
+    left: 25px;
 }
 
 .fname:hover, .facc:hover, .famt:hover{
@@ -94,6 +92,38 @@
 }
 
 .form-ele-from-dd{
-    border: 2px solid red;
     align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+    .outermain{
+        height: 200%;
+        width: 100%;
+        background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(31, 23, 23));
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .outerfrom{
+        width: 80%;
+        height: 90%;
+        position: absolute;
+        margin: 2% auto;
+        background: whitesmoke;
+        padding: 4px;
+        overflow: hidden;
+        border-radius: 15px;
+        left: 10%;
+    }
+
+    .usr-btn{
+        left: 55%;
+        padding: 4px auto;
+    }
+
+    .usr-btn{
+        left: 85%;
+        padding: 4px auto;
+    }
 }

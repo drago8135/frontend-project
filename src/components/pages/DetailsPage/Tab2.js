@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tab2 = () => {
     return (
-        <div>
+        <div className='col'>
             <table className='table-det'>
                 <tr>
                     <td colSpan='2' className='lol'>Bank Details</td>
