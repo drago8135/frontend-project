@@ -1,6 +1,7 @@
 import { Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import './App.css';
 import Nav from './components/Nav';
+import About from './components/pages/Aboutpage/About';
 import Admin from './components/pages/AdminPage/Admin';
 import Detailsp from './components/pages/DetailsPage/Detailsp';
 import Home from './components/pages/HomePage/Home';
@@ -18,6 +19,7 @@ function App() {
         <Route path='User' exact element={<User />}>
           <Route path='Detailsp' element={<Detailsp />} />
         </Route>
+        <Route path='About' exact element={<About />}></Route>
       </Routes>
     </Router>
   );

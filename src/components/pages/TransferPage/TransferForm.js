@@ -28,14 +28,14 @@ const TransferForm = () => {
                                 <input type='text' name='famt' id='famt' className='famt' placeholder='Enter Amount' onChange={e => setformdet({...formdet, famt: e.target.value})} value={formdet.famt} required/>
                             </div>
                             <div className='form-ele-from-dd'>
-                                <label for='ttype'>Transfer Type : </label>
+                                <label for='ttype'>Transfer Type : &nbsp;&nbsp;</label>
                                 <select id='ttype' name='ttpye' className='ttype' onChange={e => setformdet({...formdet, ttype: e.target.value})} value={formdet.ttype}>
                                     <option value='ctransfer'>Customer Transfer</option>
                                     <option value='btransfer'>Bank Transfer</option>
                                 </select>
                             </div>
                             <div className='form-ele-from-dd'>
-                                <label for='curtype'>Currency Type : </label>
+                                <label for='curtype'>Currency Type : &nbsp;</label>
                                 <select id='curtype' name='curtype' className='curtype' >
                                     <option value='1' >$ Doller</option>
                                     <option value='2' >$ SGD</option>

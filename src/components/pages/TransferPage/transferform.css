@@ -8,9 +8,8 @@
 .outermain{
     height: 200%;
     width: 100%;
-    background: white;
-    background-image: url(/public/bg2.jpg),url(/public/bg1.jpg);
-    background-position: right, left;
+    background-image: url(/public/bg6.webp);
+    background-size: cover;
     image-rendering: optimizeQuality;
     background-repeat: no-repeat;
     position: absolute;
@@ -18,15 +17,22 @@
 
 .outerfrom{
     width: 60%;
-    height: 80%;
+    height: 90%;
     position: absolute;
     margin: 2% auto;
-    background: whitesmoke;
+    background:#e9dcdc;
     padding: 4px;
     overflow: hidden;
     border-radius: 15px;
     left: 20%;
     box-shadow: 10px 10px 8px #888888;
+}
+
+.curtype, .ttype{
+    left: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
 }
 
 .tsubmit{

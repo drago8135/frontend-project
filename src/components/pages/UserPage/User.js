@@ -47,8 +47,8 @@ const User = () => {
         <div>
             {(user.uid !== '') ? (
                 <div className='usrdiv'>
-                    <h2 style={{color: 'whitesmoke'}}>Welcome, <span>{user.uid}</span></h2>
-                    <button onClick={logout} className='usr-btn' style={{marginLeft: '75%'}}>Logout</button>
+                    <h2 className='htext' style={{color: 'whitesmoke' , padding: '10px'}}>Welcome, {user.uid}</h2>
+                    <button onClick={logout} className='usr-btn' style={{marginLeft: '25%'}}>Logout</button>
                     <Link to={`/User/Detailsp`}>
                         <button className='usr-btn' style={{marginLeft: '20px'}} onClick={testfun}>View Info</button>
                     </Link>
